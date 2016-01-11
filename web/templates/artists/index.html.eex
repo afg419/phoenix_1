@@ -1,0 +1,9 @@
+<h1>Artists!!!!</h1>
+
+<%= for q <- @artists do %>
+
+  <%= q.name %><br><br>
+
+<% end %>
+
+<%= link "New Artist", to: artists_path(@conn, :new) %>

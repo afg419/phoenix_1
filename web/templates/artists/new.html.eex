@@ -1,0 +1,15 @@
+<%= form_for @artist, artists_path(@conn, :create), fn f -> %>
+<div class="input_wrapper center_block">
+   <label>Artist's Name</label>
+   <%= text_input f, :name %>
+ </div>
+
+ <div class="input_wrapper center_block">
+   <label>Artist's Age</label>
+   <%= number_input f, :age %>
+ </div>
+
+ <div class="input_wrapper center_block">
+   <%= submit "Create Artist" %>
+ </div>
+<% end %>
